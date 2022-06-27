@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+header{
+    position: fixed;
+    top: 0; left:0; right: 0;
+    z-index: 1000;
+    background: #fff;
+    padding: 2rem 9%;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    justify-content: space-between;
+}
+
+header .logo{
+    font-weight: bolder;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+header .logo span{
+    color: var(--red);
+}
+
+header .navbar{
+    color: #333;
+    font-size: 2rem;
+    padding: 0 1.5rem
+}
+
+header .navbar a:hover{
+    color:  var(--red);
+}
+
+header .icons #menu-bars,
+header .icons a{
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 5rem;
+    font-size: 2rem;
+    margin-right: .5rem;
+    border-radius: .5rem;
+    color: var(--red);
+    background: var(--light-red);
+    text-align: center;
+}
+
+header .icons #menu-bars:hover,
+header .icons a:hover{
+    background-color: var(--red);
+    color: #fff;
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media (max-width:768px){
+    header .icons #menu-bars{
+        display: inline-block;
+    }
+}
+
+header .navbar{
+    position: absolute;
+    left: 0; right: 0; top: 100px;
+    background: #f7f7f7;
+    border-top: .1rem solid #333;
+    border-bottom: .1rem solid #333;
+    transition: .2s linear;
+}
+
+#sect{
+    background-image: url("/assets/550537.jpg");
+/* background-position: center;
+background-repeat: no-repeat; */
+background-size: cover;
+background-attachment: fixed;
+}
+
+#cont{
+    background-color: #f7f7f7;
+    background-clip: padding-box;
+    box-shadow: 10px rgb(125 123 123 / 98%);
+    padding-bottom: 50px;
+}
